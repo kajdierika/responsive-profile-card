@@ -1,0 +1,202 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Segítő színek
+
+.profile-card {
+   background-color: hsla(60, 100%, 50%, .4);
+}
+
+.profile-image {
+  background-color: hsla(304, 44%, 68%, .7);
+}
+
+.headline {
+  background-color: hsla(136, 81%, 69%, .7);
+}
+
+.content {
+  background-color: hsla(201, 82%, 66%, .8);
+}
+*/
+
+/* Pozicionálás */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  width: 21.25rem;
+  height: 27.5rem;
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  padding: 0.625rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.headline {
+  position: absolute;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  padding: 3rem 0.625rem;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  padding: 0.625rem;
+}
+
+/* Formázás */
+
+body {
+  background: url('assets/DSCN2384.JPG') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Noto Sans";
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .8);
+  box-shadow: hsla(0, 0%, 0%, .9) 0.625rem 0.625rem 5rem;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(50%);
+}
+
+.headline {
+  text-align: center;
+}
+
+h1, .contact {
+  font-family: Arizonia;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+.location {
+  font-size: 0.875rem;
+}
+
+.contact {
+  font-size: 1.375rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.social-icon {
+  font-size: 130%;
+}
+
+.social-icon:hover {
+  color: darkturquoise;
+}
+
+.about {
+  text-align: justify;
+}
+
+
+h1, .fa-map-marker, .location, .social-icon, em {
+  color: darkslateblue;
+}
+
+em {
+  font-weight: 700;
+}
+
+/* Médiabeállítások */
+
+@media (max-width: 320px) {
+  
+    .profile-card {
+      width: 18.75rem;
+      height: 31.5rem;
+  }
+  
+    .profile-image {
+      height: 45%;
+  }
+  
+    .headline {
+      height: 45%;
+      padding: 0.625rem;
+  }
+  
+    .content {
+      height: 55%;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  .profile-card {
+    position: relative;
+    width: 37.5rem;
+    height: 12.5rem;
+  }
+
+  .headline {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .profile-image {
+    position: absolute;
+    right: 25%;
+    width: 25%;
+    height: 100%;
+  }
+  
+  .content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+  
+   div {
+     float: right;
+  }
+  
+   h1 {
+     font-size: 1.75rem;
+  }
+  
+    .about, .title {
+      font-size: 0.875rem;
+  }
+}
